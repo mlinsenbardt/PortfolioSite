@@ -1,0 +1,128 @@
+.container { 
+	font-family: 'Merriweather', serif;
+	width: 80%;
+	line-height: 25px;
+	position:relative;
+ 	padding:50px 0 0 200px;
+ 	overflow: hidden;
+}
+#sidebar {
+    position:absolute;
+    left: 0;
+    background: #e5faff;
+    padding: 5px;
+    border:1px solid #000;
+}
+#header { 
+	font-family: 'Ubuntu', sans-serif;
+	border:1px solid #000; 
+    margin:5px 0 5px 0; 
+    padding: 5px; 
+    background: #ffe5e5;
+}
+#content { border:1px solid #000; 
+	height:60%;
+    margin:5px 0 5px 0; 
+    padding: 5px; 
+    background: #ffe5e5;
+    overflow: auto;
+}
+#gitbutton{
+	background-image: url("/Assets/Images/github.png");
+}
+#portrait{
+	display: block;
+	margin: 0 auto;
+}
+#content h3{
+	font-family: 'Ubuntu', sans-serif;
+	cursor: pointer;
+}
+body{
+	background-image: url("/Assets/Images/background.jpg");
+	background-size: 100% 100%;
+	min-height: 100%;
+    background-repeat: no-repeat;
+}
+header{
+	height: 450px;
+	background: url("/Assets/Images/header-bg.jpg");
+	background-size: cover;
+}
+header .logo img{
+	height: 50px;
+	width: 50px;
+	background-color: rgba(127, 127, 127, 0.6);
+	border-radius: 500px;
+	margin: 25px;
+}
+header h1{
+	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.05em;
+}
+header h1 span{
+	background-color: rgba(127, 127, 127, 0.6);
+	display: inline-block;
+	padding: .2em .5em;
+	border: black solid 5px;
+	border-radius: 15px;
+}
+footer{
+	background: url("/Assets/Images/header-bg.jpg");
+	background-size: cover;
+	display: flex;
+	justify-content: space-around;
+}
+footer .links{
+	padding: 50px 30px;
+	margin: 5px 5px 5px 0;
+}
+footer .copyright{
+	padding: 50px 30px;
+	margin: 5px 5px 5px 0;
+}
+footer .contact{
+	padding: 50px 30px;
+	margin: 5px 5px 5px 0;
+}
+footer div{
+	width: 200px;
+	background-color: rgba(127, 127, 127, 0.6);
+	border-radius: 50px;
+	border: solid black 2px;
+}
+@media only screen and (max-width: 700px){
+	footer{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+@media only screen and (max-width: 600px){
+	header{
+		height:300px;
+	}
+	header h1{
+		font-size: 30px;
+		padding:3px;
+		margin: 0px;
+	}
+}
+//Android devices
+@media screen and (-webkit-min-device-pixel-ratio: 3.0) and (max-width: 1440px) {
+    //galaxy S6
+	header{
+		height:300px;
+	}
+	header h1{
+		font-size: 30px;
+		padding:3px;
+		margin: 0px;
+	}
+	footer{
+		flex-direction: column;
+		align-items: center;
+	}
+}

@@ -1,0 +1,141 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="/Assets/CSS/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+        <header>
+            <div class="logo">
+                <img src="/Assets/Images/glasses-logo.png">
+            </div>
+            <h1><span>Michael Linsenbardt</span></h1>
+
+        </header>
+        <body>
+            <div id="sidebar" hidden=true>
+                <img src="portrait.jpg" width=175px height=350px id="portrait">
+                <h3>Social</h3>
+                <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+                <script type="IN/Share"></script>
+                <form action="http://github.com/mlinsenbardt">
+                    <input type="image" src="/Assets/Images/github.png" id="gitbutton">
+                </form>
+            </div>
+            <div id="header">
+                <section class="title" style="text-align: center;">
+                    <h1>Welcome</h1>
+                </section>
+            </div>
+            <div id="content">
+                <div id="accordion" width="100px">
+                    <h3 cursor="pointer">About Me</h3>
+                    <div>
+                        <p>
+                               I recently graduated from CSU Chico with a degree in Computer Science. I am a quick learner and have a diverse palate of tools, including C++, C#, Android, SQL, 
+                                and Javascript experience. I have experience working in teams through my schoolwork and internships. 
+                                I am looking for a job where I can continue to develop my skills and contribute to bettering myself and those I work with.
+                        </p>
+                        <p>
+                            I have many other interests outside of software development, including playing music, reading, writing, and playing video games. I love learning new things! I am constantly pushing myself to learn a new instrument or a new web framework, because I enjoy the process of struggling through the learning process and get a lot of satisfaction from finally creating something cool or useful.
+                        </p>
+
+                    </div>
+                    <h3 cursor="pointer">Work</h3>
+                    <div>
+                        <p>
+                            This passion for learning new things has left me with a pretty diverse set of skills, which can be clearly seen in my body of work. In particular, I have a passion for web and mobile app development, since there are lots of tools and options for me to express my creativity. As a rule, I try to avoid using css frameworks, as I find that these tend to limit your design space and feel very restrictive to me. That being said, I have used both Bootstrap and Foundation in several web applications, both in work and in school projects.
+                        </p>
+                        
+                        <ul>
+                            <li><p><a href="http://landscapeacacia.com">Acacia Landscaping</a>: This is a website I created for my brother-in-law to promote his landscaping business. It was built using SquareSpace, but I edited some of the HTML and Javascript myself. I would have liked to have created the whole thing from scratch, but having a powerful tool like SquareSpace allowed to build this site in a matter of hours rather than days.</p></li>
+                            <li><p><strong>Music Album:</strong> This Android app allows the user to arrange music sheet arrangements using just the camera on your android device. For this project I colabborated with Masato Miyano and Christopher Hasek. The APK and source code are available at <a href="http://github.com/mlinsenbardt/MusicAlbum">this</a> Github repository.</p></li>
+                            <li><p><strong>PanelSmith:</strong> For my senior project I developed a web app that would allow a nontechnical person to create and share webcomics. I used .NET MVC standards for this application and though I was never satisfied enough with it to pay for hosting it, I think it can still be useful and fun. The source code can be found at <a href="http://github.com/mlinsenbardt/PanelSmith">this</a> Github repository.</strong></p></li>
+
+                        </ul>    
+                    </div>
+                    <h3 cursor="pointer">My Goals</h3>
+                    <div>
+                        <p>
+                            My personal goals are pretty modest. I want to work on projects that excite me and challenge me. I want to be learning new things every day and apply these things in my work. I want to be always bettering myself and developing the tools to succeed. Most important of all, I want to know that my efforts are contributing to advancement in some form or another. If you can fulfill these needs, I will be happy to work with you!
+                        </p>
+                    </div>
+                    <h3 cursor="pointer">Contact Me</h3>
+                    <div>
+                        <p>
+                            Feel free to let me know what you think of my work. I would love to hear your feedback!  
+                        </p>
+                        <ul>
+                            <li>Phone: (408) 262-4605</li>
+                            <li>Email: michaellinsenbardt@yahoo.com</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </body>
+
+        <footer>
+            <div class="links">
+                <h4>Links</h4>
+                <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+                <script type="IN/Share"></script>
+                <form action="http://github.com/mlinsenbardt">
+                    <input type="image" src="/Assets/Images/github.png" id="gitbutton">
+                </form>
+                <a href='resume_2015.pdf' id="resume">My resume</a>
+            </div>
+            <div class="copyright">
+                <br>
+                <br>
+                <p>Copyright &copy 2015 - Michael Linsenbardt</p>
+            </div>
+            <div class="contact">
+                <h4>Contact</h4>
+                <p>(408) 802-5009</p>
+                <p>michaellinsenbardt@yahoo.com</p>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("#accordion").accordion({
+                    collapsible: true
+                });
+                $("#content").scroll();
+                $("resume").click(function(){
+                    $.ajax({
+                        url: '/Assets/Scripts/file.php',
+                        success: function(data) {
+                            console.log('Resume downloaded');
+                        }
+                    });
+                });
+            });
+            
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html> 
